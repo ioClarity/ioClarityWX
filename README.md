@@ -1,22 +1,19 @@
-###################################################
 ## ioClarityWX v2
-##
-## This repo contains the following:
-##   * Code for a JeeLink device which will intercept and decode
-##     WX data from some models of LaCrosse weather stations into
-##     a string of text via serial
-##
-##   * A Perl script that will read the stream of text from the 
-##     JeeLink device collecting various WX data. At 11 minute 
-##     intervals this script constructs a APRS WX string based
-##     off the latest WX data, places it inside a AX.25 frame,
-##     and then inside a KISS frame to be sent to a TCP/IP TNC.
-##     Direwolf works great for this.
-##
-##   * A systemd service file, used for making the above perl
-##     script into a system service. 
-##
-####################################################
+
+This repo contains the following:
+  * Code for a JeeLink device which will intercept and decode
+    WX data from some models of LaCrosse weather stations into
+    a string of text via serial
+
+  * A Perl script that will read the stream of text from the 
+    JeeLink device collecting various WX data. At 11 minute 
+    intervals this script constructs a APRS WX string based
+    off the latest WX data, places it inside a AX.25 frame,
+    and then inside a KISS frame to be sent to a TCP/IP TNC.
+    Direwolf works great for this.
+
+  * A systemd service file, used for making the above perl
+    script into a system service. 
 
 Details of this project can be found on http://ioclarity.ca
 
