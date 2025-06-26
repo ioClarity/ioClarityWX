@@ -1,0 +1,13 @@
+[Unit]
+Description=ioClarityWX Service.  Requires Direwolf
+After=network.target direwolf.service
+Requires=direwolf.service
+
+[Service]
+Type=simple
+User=pi
+ExecStart=/usr/bin/perl /home/pi/ioClarity/ioClarityWX/ioClarityWX.pl
+WorkingDirectory=/home/pi/ioClarity/ioClarityWX
+
+[Install]
+WantedBy=multi-user.target
