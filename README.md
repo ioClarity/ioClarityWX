@@ -15,8 +15,6 @@ This repo contains the following:
   * A systemd service file, used for making the above perl
     script into a system service. 
 
-Details of this project can be found on http://ioclarity.ca
-
 At some point I will pad these instructions out, but for now these will do
 
 Installation:
